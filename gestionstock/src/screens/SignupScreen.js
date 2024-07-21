@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { View, TextInput, Button, StyleSheet, Text, Picker, Alert, ScrollView } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
+import { View, TextInput, Button, StyleSheet, Text, Alert, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AuthContext } from '../context/AuthContext';
 
