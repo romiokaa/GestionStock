@@ -10,14 +10,14 @@ export default function LoginScreen({ navigation }) {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('https://ton-serveur.com/api/login', { // Remplace par l'URL de ton API
+      const response = await fetch('https://ton-serveur.com/api/login', { // Remplacer par l'URL API
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           email,
-          mdp: password // Utilise le nom correct du champ "mdp" dans ta base de données
+          mdp: password 
         })
       });
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { View, Text, Image, Button, StyleSheet, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { AuthContext } from '../context/AuthContext'; // Assure-toi d'avoir créé ce contexte
+import { AuthContext } from '../context/AuthContext'; // S'assurer d'avoir créé ce contexte
 
 export default function ProductDetailsScreen({ route }) {
   const { product } = route.params; // Récupère les détails du produit depuis les paramètres de navigation
@@ -10,8 +10,8 @@ export default function ProductDetailsScreen({ route }) {
   const { userToken } = useContext(AuthContext); // Récupère le token de l'utilisateur
 
   useEffect(() => {
-    // Vérifie si l'utilisateur est déjà intéressé ou a déjà acheté le produit
-    // (Tu devras implémenter la logique pour récupérer ces informations depuis ton API ou le stockage local)
+    // Vérifier si l'utilisateur est déjà intéressé ou a déjà acheté le produit
+    // (implémenter la logique pour récupérer ces informations depuis API ou le stockage local)
   }, [product.idLots]); // Exécuter l'effet chaque fois que le produit change
 
   const handleInterested = async () => {

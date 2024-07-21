@@ -23,7 +23,7 @@ export default function SignupScreen({ navigation }) {
 
   useEffect(() => {
     // Récupérer la liste des spécialités depuis l'API
-    fetch('https://ton-serveur.com/api/specialites') // Remplace par l'URL de ton API
+    fetch('https://ton-serveur.com/api/specialites') // Remplacer par l'URL API
       .then(response => response.json())
       .then(data => setSpecialites(data))
       .catch(error => {
@@ -54,7 +54,7 @@ export default function SignupScreen({ navigation }) {
     }
 
     try {
-      const response = await fetch('https://ton-serveur.com/api/signup', { // Remplace par l'URL de ton API
+      const response = await fetch('https://ton-serveur.com/api/signup', { // Remplace par l'URL API
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
